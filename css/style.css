@@ -190,7 +190,7 @@ footer {
 .card-text {
     color: #555;
     font-size: 0.95rem;
-    margin-bottom: auto; /* Empuja hacia abajo cualquier contenido adicional */
+    margin-bottom: auto;
 }
 
 .card a {
