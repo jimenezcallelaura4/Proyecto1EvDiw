@@ -1,82 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto Viajes</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Destinos</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <img src="img/logo2.png" alt="Logo" style="height: 40px; margin-right: 10px;">
+            <img src="img/logo2.png" alt="Logo" style="height:40px;margin-right:10px;">
             <a class="navbar-brand" href="#">Viajes</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="destinos.html">Destinos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="experiencias.html">Experiencias</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contacto.html">Contacto</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="blog.html">Blog de Viaje</a>
-                    </li>
-                </ul>
+            <ul class="navbar__list navbar-nav ms-auto">
+                <li class="navbar__item nav-item">
+                <a class="nav-link active" href="index.html">Inicio</a>
+                </li>
+                <li class="navbar__item nav-item">
+                <a class="nav-link" href="destinos.html">Destinos</a>
+                </li>
+                <li class="navbar__item nav-item">
+                <a class="nav-link" href="experiencias.html">Experiencias</a>
+                </li>
+                <li class="navbar__item nav-item">
+                <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+                <li class="navbar__item nav-item">
+                <a class="nav-link" href="blog.html">Blog de Viaje</a>
+                </li>
+                <button id="theme-toggle" class="btn btn-secondary ms-3">Tema Oscuro</button>
+            </ul>
             </div>
         </div>
-    </nav>
+        </nav>
+    </header>
 
-
-    <section id="destinos" class="py-5">
+    <main>
+        <section id="destinos" class="py-5">
         <div class="container">
             <h2 class="text-center mb-4">Explora Nuestros Destinos</h2>
-            <div class="row g-4">
-
-                <div class="col-md-4">
-                    <div class="card text-center">
-                        <img src="img/playa.webp" class="card-img-top" alt="Playa">
-                        <div class="card-body">
-                            <h5 class="card-title">Sitios de Playa</h5>
-                            <p class="card-text">Descubre las mejores playas con arenas doradas y aguas cristalinas.</p>
-                            <a href="playa.html" class="btn btn-primary">Explorar</a>
-                    </div>
+            <div class="destinos-grid">
+            <div class="card text-center">
+                <img src="img/playa.webp" class="card__img" alt="Playa">
+                <div class="card__body">
+                <h5 class="card__title">Sitios de Playa</h5>
+                <p class="card__text">Descubre las mejores playas con arenas doradas y aguas cristalinas.</p>
+                <a href="playa.html" class="card__link btn btn-primary">Explorar</a>
                 </div>
             </div>
-
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="img/montaña.jpg" class="card-img-top" alt="Montaña">
-                    <div class="card-body">
-                        <h5 class="card-title">Sitios de Montaña</h5>
-                        <p class="card-text">Aventúrate en paisajes montañosos y descubre vistas expectaculares.</p>
-                        <a href="montaña.html" class="btn btn-primary">Explorar</a>
-                    </div>
+            <div class="card">
+                <img src="img/montaña.jpg" class="card__img" alt="Montaña">
+                <div class="card__body">
+                <h5 class="card__title">Sitios de Montaña</h5>
+                <p class="card__text">Aventúrate en paisajes montañosos y descubre vistas espectaculares.</p>
+                <a href="montaña.html" class="card__link btn btn-primary">Explorar</a>
                 </div>
             </div>
-
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="img/ciudad.webp" class="card-img-top" alt="Ciudad">
-                    <div class="card-body">
-                        <h5 class="card-title">Sitios de Ciudad</h5>
-                        <p class="card-text">Explora destinos urbanos llenos de vida, cultura y entretenimiento .</p>
-                        <a href="ciudad.html" class="btn btn-primary">Explorar</a>
-                    </div>
+            <div class="card">
+                <img src="img/ciudad.webp" class="card__img" alt="Ciudad">
+                <div class="card__body">
+                <h5 class="card__title">Sitios de Ciudad</h5>
+                <p class="card__text">Explora destinos urbanos llenos de vida, cultura y entretenimiento.</p>
+                <a href="ciudad.html" class="card__link btn btn-primary">Explorar</a>
                 </div>
+            </div>
+            </div>
         </div>
-    </section>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container text-center py-3">
+        <p>&copy; 2024 Reserva de Viajes. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const toggleBtn = document.getElementById('theme-toggle');
+        const currentTheme = localStorage.getItem('theme');
+        if (currentTheme === 'dark') {
+            document.body.classList.add('dark-mode');
+            toggleBtn.textContent = 'Tema Claro';
+        }
+        toggleBtn.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+            let theme = document.body.classList.contains('dark-mode') ? 'dark' : 'light';
+            localStorage.setItem('theme', theme);
+            toggleBtn.textContent = theme === 'dark' ? 'Tema Claro' : 'Tema Oscuro';
+        });
+    </script>
 </body>
 </html>

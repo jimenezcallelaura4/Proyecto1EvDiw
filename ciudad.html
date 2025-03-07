@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Destinos de Ciudad</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -10,133 +10,89 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <img src="img/logo2.png" alt="Logo" style="height: 40px; margin-right: 10px;">
+            <img src="img/logo2.png" alt="Logo" style="height:40px;margin-right:10px;">
             <a class="navbar-brand" href="#">Viajes</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="destinos.html">Destinos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="experiencias.html">Experiencias</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contacto.html">Contacto</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="blog.html">Blog de Viaje</a>
-                    </li>
-                </ul>
+            <ul class="navbar__list navbar-nav ms-auto">
+                <li class="navbar__item nav-item">
+                <a class="nav-link active" href="index.html">Inicio</a>
+                </li>
+                <li class="navbar__item nav-item">
+                <a class="nav-link" href="destinos.html">Destinos</a>
+                </li>
+                <li class="navbar__item nav-item">
+                <a class="nav-link" href="experiencias.html">Experiencias</a>
+                </li>
+                <li class="navbar__item nav-item">
+                <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+                <li class="navbar__item nav-item">
+                <a class="nav-link" href="blog.html">Blog de Viaje</a>
+                </li>
+                <button id="theme-toggle" class="btn btn-secondary ms-3">Tema Oscuro</button>
+            </ul>
             </div>
         </div>
-    </nav>
-
-    <main> 
+        </nav>
+    </header>
+    
+    <main>
         <section class="py-5">
-            <div class="container">
-                <h2 class="text-center mb-4">Destinos de Playa</h2>
-                <div class="row g-4">
-                    
-                    <div class="col-md-4">
-                        <div class="card">
-                            <img src="img/ciudad1.webp" class="card-img-top" alt="Playa 1">
-                            <div class="card-body">
-                                <h5 class="card-title">Ámsterdam, Holanda</h5>
-                                <p class="card-text">Espacios verdes, fachadas de ladrillo rojo y museos llenos de pinturas de Van Gogh, y tendrás uno de los epicentros culturales más hermosos de Europa.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="card">
-                            <img src="img/ciudad2.webp" class="card-img-top" alt="Playa 1">
-                            <div class="card-body">
-                                <h5 class="card-title">Beijing, China</h5>
-                                <p class="card-text">Las calles parecen mucho más anchas que en otros lugares y la población es mucho más densa, a primera vista.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="card">
-                            <img src="img/ciudad3.webp" class="card-img-top" alt="Playa 1">
-                            <div class="card-body">
-                                <h5 class="card-title">Bergen, Noruega</h5>
-                                <p class="card-text">Puerto ascendente, coloridas hileras de casas de madera y vistas panorámicas de los fiordos circundantes y el grupo montañoso.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="card">
-                            <img src="img/ciudad4.webp" class="card-img-top" alt="Playa 1">
-                            <div class="card-body">
-                                <h5 class="card-title">Ciudad de Quebec, Canadá</h5>
-                                <p class="card-text">La ciudad tiene una posición envidiable en una colina junto a un acantilado con vistas al río San Lorenzo, lo que solo hace que su arquitectura antigua sea aún más espectacular. </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="card">
-                            <img src="img/ciudad5.webp" class="card-img-top" alt="Playa 1">
-                            <div class="card-body">
-                                <h5 class="card-title">Chiang Mai, Tailandia</h5>
-                                <p class="card-text">Hay una proliferación de hoteles asombrosos; la rica estética de la historia de los puestos comerciales se mezcla con los aromas del espresso y el curry súper caliente a lo largo de las calles de Wat Gate.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="card">
-                            <img src="img/ciudad6.webp" class="card-img-top" alt="Playa 1">
-                            <div class="card-body">
-                                <h5 class="card-title">Copenhague, Dinamarca</h5>
-                                <p class="card-text">A pesar de su reputación de crear restaurantes y hoteles de vanguardia, Copenhague tiene un encanto atemporal que hace que quieras volver.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="card">
-                            <img src="img/ciudad7.webp" class="card-img-top" alt="Playa 1">
-                            <div class="card-body">
-                                <h5 class="card-title">Doha, Qatar</h5>
-                                <p class="card-text">Este antiguo pueblo de pescadores, fundado en una bahía turquesa en la década de 1820, está bordeado por rascacielos al estilo de Emerald City.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="card">
-                            <img src="img/ciudad8.webp" class="card-img-top" alt="Playa 1">
-                            <div class="card-body">
-                                <h5 class="card-title">Edimburgo, Escocia</h5>
-                                <p class="card-text">Amada por sus interminables colinas verdes y su fascinante historia, Edimburgo luce genial en todas las estaciones. </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="card">
-                            <img src="img/ciudad9.webp" class="card-img-top" alt="Playa 1">
-                            <div class="card-body">
-                                <h5 class="card-title">Hanoi, Vietnam</h5>
-                                <p class="card-text">Hanoi es un microcosmos perfecto para la región del sudeste asiático: atemporal, elegante e insondablemente delicioso, todo en una ciudad compacta y manejable.</p>
-                            </div>
-                        </div>
-                    </div>
+        <div class="container">
+            <h2 class="text-center mb-4">Destinos de Ciudad</h2>
+            <div class="destinos-grid">
+            <div class="card">
+                <img src="img/ciudad1.webp" class="card-img-top" alt="Ciudad 1">
+                <div class="card__body">
+                <h5 class="card__title">Ámsterdam, Holanda</h5>
+                <p class="card__text">Espacios verdes, fachadas de ladrillo rojo y museos llenos de Van Gogh.</p>
                 </div>
             </div>
+            <div class="card">
+                <img src="img/ciudad2.webp" class="card-img-top" alt="Ciudad 2">
+                <div class="card__body">
+                <h5 class="card__title">Beijing, China</h5>
+                <p class="card__text">Las calles parecen mucho más anchas que en otros lugares.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/ciudad3.webp" class="card-img-top" alt="Ciudad 3">
+                <div class="card__body">
+                <h5 class="card__title">Bergen, Noruega</h5>
+                <p class="card__text">Puerto ascendente, casas de madera y vistas panorámicas de fiordos.</p>
+                </div>
+            </div>
+            </div>
+        </div>
         </section>
     </main>
+
+    <footer>
+        <div class="container text-center py-3">
+        <p>&copy; 2024 Reserva de Viajes. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        const toggleBtn = document.getElementById('theme-toggle');
+        const currentTheme = localStorage.getItem('theme');
+        if (currentTheme === 'dark') {
+            document.body.classList.add('dark-mode');
+            toggleBtn.textContent = 'Tema Claro';
+        }
+        toggleBtn.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+            let theme = document.body.classList.contains('dark-mode') ? 'dark' : 'light';
+            localStorage.setItem('theme', theme);
+            toggleBtn.textContent = theme === 'dark' ? 'Tema Claro' : 'Tema Oscuro';
+        });
+    </script>
 </body>
 </html>

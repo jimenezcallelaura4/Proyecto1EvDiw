@@ -1,211 +1,249 @@
+:root {
+  --color-fondo: #ffffff;
+  --color-texto: #333333;
+  --color-nav: linear-gradient(90deg, #3D3936, #9E6944);
+  --color-btn: #007bff;
+  --color-btn-hover: #0056b3;
+}
+
+.dark-mode {
+  --color-fondo: #333333;
+  --color-texto: #f1f1f1;
+  --color-nav: linear-gradient(90deg, #000000, #222222);
+  --color-btn: #0056b3;
+  --color-btn-hover: #003366;
+}
+
 body {
-    font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
 }
 
-.navbar{
-    background: linear-gradient(90deg, #3D3936, #9E6944);
+.navbar {
+  background: var(--color-nav);
+}
+.navbar__list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.navbar__item {
+  margin-right: 40px;
+}
+.navbar__item:last-child {
+  margin-right: 0;
 }
 
-
-.navbar .nav-item{
-    margin-right: 40px;
+.carousel__caption h5 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: beige;
 }
-
-.navbar-nav .nav-item:last-child {
-    margin-right: 0; /* Elimina el margen del último elemento */
-}
-
-.carousel-caption h5{
-    font-size: 2rem;
-    font-weight: bold;
-    color: beige;
-}
-
-
 .carousel-item img {
-    height: 460px;
-    object-fit: cover;
+  height: 460px;
+  object-fit: cover;
+}
+.carousel__caption {
+  animation: fadeIn 1.5s ease-in-out;
 }
 
-.carousel-caption {
-    animation: fadeIn 1.5s ease-in-out;
-}
-
-/* animacion txt banner */
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #fff;
+}
+.card__img {
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.card__body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15px;
+}
+.card__title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.card__text {
+  color: #555;
+  font-size: 0.9rem;
+  margin-bottom: auto;
+}
+.card__link {
+  text-decoration: none;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 5px;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+  align-self: flex-start;
+  background-color: var(--color-btn);
+}
+.card__link:hover {
+  background-color: var(--color-btn-hover);
+}
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
-#rutas-recomendadas .card {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
+.destinos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
 }
 
-#rutas-recomendadas .card img {
-    height: 200px;
-    object-fit: cover;
+.beneficios__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+.beneficios__item {
+  flex: 1 1 300px;
+  text-align: center;
+  padding: 10px;
 }
 
-#rutas-recomendadas .btn {
-    margin-top: auto;
+#contacto h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
 }
-
-.rating i {
-    font-size: 1rem;
-    margin-right: 2px;
+#contacto form .form-control {
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 10px;
 }
-
-.blockquote-footer {
-    font-weight: bold;
-    font-size: 0.9rem;
+#contacto form .btn {
+  background-color: var(--color-btn);
+  color: white;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
 }
-
-footer {
-    font-size: 0.9rem;
+#contacto form .btn:hover {
+  background-color: var(--color-btn-hover);
 }
-
-
-/* CONTACTO */
-
-#contacto h2{
-    font-size: 2rem;
-    font-weight: bold;
-    color: #333;
-}
-
-#contacto form .form-control{
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    padding: 10px;
-}
-
-#contacto form .btn{
-    background-color: #007bff;
-    color: white;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-#contacto form .btn:hover{
-    background-color: #0056b3;
-}
-
-/*datos empresa*/
-
 #contacto .list-unstyled li {
-    margin-bottom: 15px;
-    font-size: 1rem;
-    color: #555;
-    display: flex;
-    align-items: center;
+  margin-bottom: 15px;
+  font-size: 1rem;
+  color: #555;
+  display: flex;
+  align-items: center;
 }
-
 #contacto .list-unstyled li i {
-    font-size: 1.5rem;
-    margin-right: 10px;
-    color: #007bff;
+  margin-bottom: 15px;
+  font-size: 1rem;
+  color: #555;
+  display: flex;
+  align-items: center;
 }
-
-#contacto .list-unstyled li a:hover {
-    text-decoration: underline;
+#contacto .list-unstyled li i i {
+  font-size: 1.5rem;
+  margin-right: 10px;
+  color: var(--color-btn);
 }
-
-/* DESTINOS*/
+#contacto .list-unstyled li i a:hover {
+  text-decoration: underline;
+}
 
 #destinos {
-    background-color: #f9f9f9;
-    padding: 50px 0;
+  background-color: #f9f9f9;
+  padding: 50px 0;
 }
 
-#destinos .card{
-    border: none;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.dark-mode #destinos {
+  background-color: #444 !important;
+  color: var(--color-texto);
 }
 
-/* mueve al poner el raton encima*/
-#destinos .card:hover{
-    transform: translateY(-10px);
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+.dark-mode #destinos .card {
+  background-color: #555;
+  color: var(--color-texto);
 }
 
-#destinos .card-img-top{
-    height: 250px;
-    object-fit: cover;
+.dark-mode #destinos .card__title,
+.dark-mode #destinos .card__text {
+  color: var(--color-texto);
 }
 
-#destinos h5{
-    font-weight: bold;
-    margin-top: 15px;
+.dark-mode #destinos .card__link {
+  background-color: #0056b3;
 }
 
-
-
-/*PLAYA*/
-
-
-.card {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%; /* tarjetas mismo alto */
-    border: none;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+.dark-mode #destinos .card__link:hover {
+  background-color: #003f80;
 }
 
-.card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+#opiniones {
+  background-color: #f9f9f9;
 }
 
-.card-img-top {
-    height: 200px;
-    object-fit: cover;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
+.dark-mode #opiniones {
+  background-color: #444 !important;
+  color: var(--color-texto);
 }
 
-.card-body {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.dark-mode #opiniones .blockquote,
+.dark-mode #opiniones .blockquote-footer {
+  color: var(--color-texto);
 }
 
-.card-title {
-    font-size: 1.2rem;
-    font-weight: bold;
+#contacto .social-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+  margin-top: 40px;
 }
 
-.card-text {
-    color: #555;
-    font-size: 0.95rem;
-    margin-bottom: auto;
+#contacto .social-icons li {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  font-size: 1rem;
+  color: #555;
 }
 
-.card a {
-    text-decoration: none;
-    color: #fff;
-    padding: 8px 16px;
-    border-radius: 5px;
-    display: inline-block;
-    transition: background-color 0.3s ease;
-    margin-top: 10px; /* Añade espacio entre el texto y el botón */
-    align-self: flex-start; /* Evita que el botón ocupe todo el ancho */
+#contacto .social-icons li i {
+  font-size: 1.5rem;
+  margin-right: 8px;
+  color: var(--color-btn);
 }
 
-/* uniformidad en el contenedor de tarjetas */
-.row.g-4 > * {
-    display: flex;
+#contacto .social-icons li a {
+  color: var(--color-btn);
+  text-decoration: none;
 }
 
+#contacto .social-icons li a:hover {
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=style.css.map */

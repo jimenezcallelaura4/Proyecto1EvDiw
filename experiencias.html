@@ -12,34 +12,37 @@
 
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-            <img src="img/logo2.png" alt="Logo" style="height: 40px; margin-right: 10px;">
-            <a class="navbar-brand" href="#">Viajes</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#inicio">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="destinos.html">Destinos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="experiencias.html">Experiencias</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contacto.html">Contacto</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="blog.html">Blog de Viaje</a>
-                    </li>
-                </ul>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <img src="img/logo2.png" alt="Logo" style="height: 40px; margin-right: 10px;">
+                <a class="navbar-brand" href="#">Viajes</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar__list navbar-nav ms-auto">
+                        <li class="navbar__item nav-item">
+                            <a class="nav-link active" href="#inicio">Inicio</a>
+                        </li>
+                        <li class="navbar__item nav-item">
+                            <a class="nav-link" href="destinos.html">Destinos</a>
+                        </li>
+                        <li class="navbar__item nav-item">
+                            <a class="nav-link" href="experiencias.html">Experiencias</a>
+                        </li>
+                        <li class="navbar__item nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                        <li class="navbar__item nav-item">
+                            <a class="nav-link" href="blog.html">Blog de Viaje</a>
+                        </li>
+                        <button id="theme-toggle" class="btn btn-secondary ms-3">Tema Oscuro</button>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
     <main>
         <section class="py-5">
@@ -50,10 +53,10 @@
                     <div class="col-md-4">
                         <div class="card">
                             <img src="img/exp1.png" class="card-img-top" alt="Snorkel">
-                            <div class="card-body">
-                                <h5 class="card-title">Buceo y Snorkel</h5>
-                                <p class="card-text">Descubre arrecifes de coral y vida marina en los mejores destinos del mundo.</p>
-                                <a href="snorkel.html" class="btn btn-primary">Ver más</a>
+                            <div class="card__body">
+                                <h5 class="card__title">Buceo y Snorkel</h5>
+                                <p class="card__text">Descubre arrecifes de coral y vida marina en los mejores destinos del mundo.</p>
+                                <a href="snorkel.html" class="card__link btn btn-primary">Ver más</a>
                             </div>
                         </div>
                     </div>
@@ -61,10 +64,10 @@
                     <div class="col-md-4">
                         <div class="card">
                             <img src="img/exp2.jpg" class="card-img-top" alt="Aventura">
-                            <div class="card-body">
-                                <h5 class="card-title">Aventuras en Montaña</h5>
-                                <p class="card-text">Explora senderos, realiza escalada o disfruta de una caminata con vistas espectaculares.</p>
-                                <a href="aventura.html" class="btn btn-primary">Ver más</a>
+                            <div class="card__body">
+                                <h5 class="card__title">Aventuras en Montaña</h5>
+                                <p class="card__text">Explora senderos, realiza escalada o disfruta de una caminata con vistas espectaculares.</p>
+                                <a href="aventura.html" class="card__link btn btn-primary">Ver más</a>
                             </div>
                         </div>
                     </div>
@@ -72,10 +75,10 @@
                     <div class="col-md-4">
                         <div class="card">
                             <img src="img/exp3.png" class="card-img-top" alt="Gastronomía">
-                            <div class="card-body">
-                                <h5 class="card-title">Cultura y Gastronomía</h5>
-                                <p class="card-text">Degusta platos tradicionales y aprende sobre la historia local en recorridos guiados.</p>
-                                <a href="gastronomia.html" class="btn btn-primary">Ver más</a>
+                            <div class="card__body">
+                                <h5 class="card__title">Cultura y Gastronomía</h5>
+                                <p class="card__text">Degusta platos tradicionales y aprende sobre la historia local en recorridos guiados.</p>
+                                <a href="gastronomia.html" class="card__link btn btn-primary">Ver más</a>
                             </div>
                         </div>
                     </div>
@@ -83,10 +86,10 @@
                     <div class="col-md-4">
                         <div class="card">
                             <img src="img/exp4.webp" class="card-img-top" alt="Gastronomía">
-                            <div class="card-body">
-                                <h5 class="card-title">Paseo en Globo</h5>
-                                <p class="card-text">En el globo sabemos de donde despegamos, pero aunque el aterrizaje es siempre controlado, rara vez se sabe dónde será.</p>
-                                <a href="gastronomia.html" class="btn btn-primary">Ver más</a>
+                            <div class="card__body">
+                                <h5 class="card__title">Paseo en Globo</h5>
+                                <p class="card__text">En el globo sabemos de donde despegamos, pero aunque el aterrizaje es siempre controlado, rara vez se sabe dónde será.</p>
+                                <a href="gastronomia.html" class="card__link btn btn-primary">Ver más</a>
                             </div>
                         </div>
                     </div>
@@ -94,10 +97,10 @@
                     <div class="col-md-4">
                         <div class="card">
                             <img src="img/exp5.webp" class="card-img-top" alt="Gastronomía">
-                            <div class="card-body">
-                                <h5 class="card-title">Crucero de lujo</h5>
-                                <p class="card-text">No tiene que viajar muy lejos para disfrutar de unas vacaciones increíbles. Navegue en uno de nuestros barcos de primera clase desde un puerto cercano a los mejores destinos de vacaciones en el Mediterráneo y más allá.</p>
-                                <a href="gastronomia.html" class="btn btn-primary">Ver más</a>
+                            <div class="card__body">
+                                <h5 class="card__title">Crucero de lujo</h5>
+                                <p class="card__text">No tiene que viajar muy lejos para disfrutar de unas vacaciones increíbles. Navegue en uno de nuestros barcos de primera clase desde un puerto cercano a los mejores destinos de vacaciones en el Mediterráneo y más allá.</p>
+                                <a href="gastronomia.html" class="card__link btn btn-primary">Ver más</a>
                             </div>
                         </div>
                     </div>
@@ -105,10 +108,10 @@
                     <div class="col-md-4">
                         <div class="card">
                             <img src="img/exp6.jpg" class="card-img-top" alt="Gastronomía">
-                            <div class="card-body">
-                                <h5 class="card-title">Spa y Termas Naturales</h5>
-                                <p class="card-text">No tiene que viajar muy lejos para disfrutar de unas vacaciones increíbles. Navegue en uno de nuestros barcos de primera clase desde un puerto cercano a los mejores destinos de vacaciones en el Mediterráneo y más allá.</p>
-                                <a href="gastronomia.html" class="btn btn-primary">Ver más</a>
+                            <div class="card__body">
+                                <h5 class="card__title">Spa y Termas Naturales</h5>
+                                <p class="card__text">No tiene que viajar muy lejos para disfrutar de unas vacaciones increíbles. Navegue en uno de nuestros barcos de primera clase desde un puerto cercano a los mejores destinos de vacaciones en el Mediterráneo y más allá.</p>
+                                <a href="gastronomia.html" class="card__link btn btn-primary">Ver más</a>
                             </div>
                         </div>
                     </div>
@@ -117,7 +120,26 @@
         </section>
     </main>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <footer>
+        <div class="container text-center py-3">
+            <p>&copy; 2024 Reserva de Viajes. Todos los derechos reservados.</p>
+        </div>
+    </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const toggleBtn = document.getElementById('theme-toggle');
+        const currentTheme = localStorage.getItem('theme');
+        if (currentTheme === 'dark') {
+            document.body.classList.add('dark-mode');
+            toggleBtn.textContent = 'Tema Claro';
+        }
+        toggleBtn.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+            let theme = document.body.classList.contains('dark-mode') ? 'dark' : 'light';
+            localStorage.setItem('theme', theme);
+            toggleBtn.textContent = theme === 'dark' ? 'Tema Claro' : 'Tema Oscuro';
+        });
+    </script>
 </body>
 </html>

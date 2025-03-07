@@ -1,258 +1,232 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Viajes</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <img src="img/logo2.png" alt="Logo" style="height: 40px; margin-right: 10px;">
+            <img src="img/logo2.png" alt="Logo" style="height:40px;margin-right:10px;">
             <a class="navbar-brand" href="#">Viajes</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="destinos.html">Destinos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="experiencias.html">Experiencias</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contacto.html">Contacto</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="blog.html">Blog de Viaje</a>
-                    </li>
-                </ul>
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                <a class="nav-link active" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="destinos.html">Destinos</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="experiencias.html">Experiencias</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="blog.html">Blog de Viaje</a>
+                </li>
+            </ul>
+            <button id="theme-toggle" class="btn btn-secondary ms-3">Tema Oscuro</button>
             </div>
         </div>
-    </nav>
-    <header>
+        </nav>
         <div id="carouselExampleCaptions" class="carousel slide">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+            <img src="/img/banner1.jpg" class="d-block w-100" alt="Banner 1">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>¡Reserva tu Viaje Soñado!</h5>
             </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="/img/banner1.jpg" class="d-block w-100">
-                    <div class="carousel-caption d-none d-md-block">
-                    <h5>¡ Reserva tu Viaje Soñado !</h5>
-                </div>
             </div>
             <div class="carousel-item">
-                <img src="/img/banner.jpg" class="d-block w-100">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Encuentra los mejores destinos al mejor precio</h5>
-                </div>
+            <img src="/img/banner.jpg" class="d-block w-100" alt="Banner 2">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Encuentra los mejores destinos al mejor precio</h5>
+            </div>
             </div>
             <div class="carousel-item">
-                <img src="img/banner2.jpg" class="d-block w-100">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Planifica tus próximas aventruas hoy</h5>
-                    <p></p>
-                </div>
+            <img src="img/banner2.jpg" class="d-block w-100" alt="Banner 3">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Planifica tus próximas aventuras hoy</h5>
             </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+        </button>
         </div>
     </header>
-
-    <section class="container my-5">
+    <main>
+        <section class="container my-5">
         <form class="row g-3">
             <div class="col-md-4">
-                <label for="origen" class="form-label">Origen</label>
-                <input type="text" 
-                        id="origen" 
-                        class="form-control" 
-                        placeholder="Ciduad de origen">
+            <label for="origen" class="form-label">Origen</label>
+            <input type="text" id="origen" class="form-control" placeholder="Ciudad de origen">
             </div>
             <div class="col-md-4">
-                <label for="destino" class="form-label">Destino</label>
-                <input type="text" 
-                        id="destino" 
-                        class="form-control" 
-                        placeholder="Ciduad de destino">
+            <label for="destino" class="form-label">Destino</label>
+            <input type="text" id="destino" class="form-control" placeholder="Ciudad de destino">
             </div>
             <div class="col-md-4">
-                <label for="fechas" class="form-label">Fechas</label>
-                <input type="date" 
-                        id="fechas" 
-                        class="form-control">
+            <label for="fechas" class="form-label">Fechas</label>
+            <input type="date" id="fechas" class="form-control">
             </div>
             <div class="col-12 text-center">
-                <button type="submit"
-                        class="btn btn-primary">Buscar</button>
+            <button type="submit" class="btn btn-primary">Buscar</button>
             </div>
         </form>
-    </section>
-
-    <section class="container my-5">
+        </section>
+        <section class="container my-5">
         <h2 class="text-center mb-4">Destinos Populares</h2>
         <div class="row">
             <div class="col-md-4 mb-4">
-                <div class="card">
-                    <img src="img/maldivas.jpg" class="card-img-top" alt="Playa">
-                    <div class="card-body">
-                        <h5 class="card-title">Maldivas</h5>
-                        <p class="card-text">Desde 999€</p>
-                        <a href="#" class="btn btn-primary">Reservar</a>
-                    </div>
+            <div class="card">
+                <img src="img/maldivas.jpg" class="card-img-top" alt="Maldivas">
+                <div class="card-body">
+                <h5 class="card-title">Maldivas</h5>
+                <p class="card-text">Desde 999€</p>
+                <a href="#" class="btn btn-primary">Reservar</a>
                 </div>
             </div>
-
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <img src="img/suiza.jpg" class="card-img-top" alt="Montaña">
-                    <div class="card-body">
-                        <h5 class="card-title">Suiza</h5>
-                        <p class="card-text">Desde 799€</p>
-                        <a href="#" class="btn btn-primary">Reservar</a>
-                    </div>
-                </div>
             </div>
             <div class="col-md-4 mb-4">
-                <div class="card">
-                    <img src="img/ny.jpeg" class="card-img-top" alt="Ciudad">
-                    <div class="card-body">
-                        <h5 class="card-title">Nueva York</h5>
-                        <p class="card-text">Desde 499€</p>
-                        <a href="#" class="btn btn-primary">Reservar</a>
-                    </div>
+            <div class="card">
+                <img src="img/suiza.jpg" class="card-img-top" alt="Suiza">
+                <div class="card-body">
+                <h5 class="card-title">Suiza</h5>
+                <p class="card-text">Desde 799€</p>
+                <a href="#" class="btn btn-primary">Reservar</a>
                 </div>
+            </div>
+            </div>
+            <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="img/ny.jpeg" class="card-img-top" alt="Nueva York">
+                <div class="card-body">
+                <h5 class="card-title">Nueva York</h5>
+                <p class="card-text">Desde 499€</p>
+                <a href="#" class="btn btn-primary">Reservar</a>
+                </div>
+            </div>
             </div>
         </div>
-    </section>
-
-    <section id="rutas-recomendadas" class="py-5">
+        </section>
+        <section id="rutas-recomendadas" class="py-5">
         <div class="container">
             <h2 class="text-center mb-4">Rutas Recomendadas</h2>
             <div class="row">
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="/img/ruta1.jpg" class="card-img-top">
-                        <div class="card-body">
-                            <h5 class="card-title">Cangas de Onís y Covadonga, Asturias</h5>
-                            <p class="card-text">Descubre el Norte de España cen un recorrido único</p>
-                            <a href="#" class="btn btn-primary">Saber más</a>
-                        </div>
-                    </div>
+            <div class="col-md-4">
+                <div class="card">
+                <img src="/img/ruta1.jpg" class="card-img-top" alt="Ruta 1">
+                <div class="card-body">
+                    <h5 class="card-title">Cangas de Onís y Covadonga, Asturias</h5>
+                    <p class="card-text">Descubre el Norte de España en un recorrido único</p>
+                    <a href="#" class="btn btn-primary">Saber más</a>
                 </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="/img/ruta2.jpg" class="card-img-top">
-                        <div class="card-body">
-                            <h5 class="card-title">Peñalara, Sierra de Guadarrama, Madrid</h5>
-                            <p class="card-text">Descubre el Norte de España cen un recorrido único</p>
-                            <a href="#" class="btn btn-primary">Saber más</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="/img/ruta3.jpg" class="card-img-top">
-                        <div class="card-body">
-                            <h5 class="card-title">Camí de Cavalls, Menorca</h5>
-                            <p class="card-text">Descubre el Norte de España cen un recorrido único</p>
-                            <a href="#" class="btn btn-primary">Saber más</a>
-                        </div>
-                    </div>
                 </div>
             </div>
+            <div class="col-md-4">
+                <div class="card">
+                <img src="/img/ruta2.jpg" class="card-img-top" alt="Ruta 2">
+                <div class="card-body">
+                    <h5 class="card-title">Peñalara, Sierra de Guadarrama, Madrid</h5>
+                    <p class="card-text">Descubre el Norte de España en un recorrido único</p>
+                    <a href="#" class="btn btn-primary">Saber más</a>
+                </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                <img src="/img/ruta3.jpg" class="card-img-top" alt="Ruta 3">
+                <div class="card-body">
+                    <h5 class="card-title">Camí de Cavalls, Menorca</h5>
+                    <p class="card-text">Descubre el Norte de España en un recorrido único</p>
+                    <a href="#" class="btn btn-primary">Saber más</a>
+                </div>
+                </div>
+            </div>
+            </div>
         </div>
-    </section>
-    
-    <section id="opiniones" class="py-5 bg-light">
+        </section>
+        <section id="opiniones" class="py-5 bg-light">
         <div class="container">
             <h2 class="text-center mb-4">Lo que Dicen Nuestros Clientes</h2>
             <div class="row">
-                <div class="col-md-6 mb-4">
-                    <blockquote class="blockquote">
-                        <p>"Un viaje increíble, todo estuvo perfectamente organizado."</p>
-                        <footer class="blockquote-footer">
-                            María Pérez
-                            <div class="rating mt-2">
-                                <i class="bi bi-star-fill text-warning"></i>
-                                <i class="bi bi-star-fill text-warning"></i>
-                                <i class="bi bi-star-fill text-warning"></i>
-                                <i class="bi bi-star-fill text-warning"></i>
-                                <i class="bi bi-star text-warning"></i>
-                            </div>
-                        </footer>
-                    </blockquote>
-                </div>
-                <div class="col-md-6 mb-4">
-                    <blockquote class="blockquote">
-                        <p>"Muy satisfecho con el servicio, repetiré pronto."</p>
-                        <footer class="blockquote-footer">
-                            Juan García
-                            <div class="rating mt-2">
-                                <i class="bi bi-star-fill text-warning"></i>
-                                <i class="bi bi-star-fill text-warning"></i>
-                                <i class="bi bi-star-fill text-warning"></i>
-                                <i class="bi bi-star-half text-warning"></i>
-                                <i class="bi bi-star text-warning"></i>
-                            </div>
-                        </footer>
-                    </blockquote>
-                </div>
+            <div class="col-md-6 mb-4">
+                <blockquote class="blockquote">
+                <p>"Un viaje increíble, todo estuvo perfectamente organizado."</p>
+                <footer class="blockquote-footer">María Pérez</footer>
+                </blockquote>
+            </div>
+            <div class="col-md-6 mb-4">
+                <blockquote class="blockquote">
+                <p>"Muy satisfecho con el servicio, repetiré pronto."</p>
+                <footer class="blockquote-footer">Juan García</footer>
+                </blockquote>
+            </div>
             </div>
         </div>
-    </section>
-
-    <section id="beneficios" class="py-5">
-        <div class="container">
-            <h2 class="text-center mb-4">Beneficios de Reservar con Nosotros</h2>
-            <div class="row text-center">
-                <div class="col-md-4">
+        </section>
+        <section id="beneficios" class="py-5">
+            <div class="container beneficios__container">
+                <div class="beneficios__item">
                     <i class="bi bi-headset fs-1 text-primary"></i>
                     <h5 class="mt-3">Atención Personalizada</h5>
                     <p>Te ayudamos a planificar cada detalle de tu viaje.</p>
                 </div>
-                <div class="col-md-4">
+                <div class="beneficios__item">
                     <i class="bi bi-wallet2 fs-1 text-success"></i>
                     <h5 class="mt-3">Mejor Precio Garantizado</h5>
                     <p>Asegúrate de obtener la mejor oferta disponible.</p>
                 </div>
-                <div class="col-md-4">
+                <div class="beneficios__item">
                     <i class="bi bi-calendar-check fs-1 text-warning"></i>
                     <h5 class="mt-3">Fácil Cancelación</h5>
                     <p>Cancela o modifica tus planes sin preocupaciones.</p>
                 </div>
             </div>
-        </div>
-    </section>
-    
-
+        </section>
+    </main>
     <footer class="bg-dark text-white text-center py-3">
         <p>&copy; 2024 Reserva de Viajes. Todos los derechos reservados.</p>
     </footer>
-
-
-    <!-- Enlace a Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Enlace a JavaScript -->
-    <script src="script.js"></script>
+
+
+<!-- Tema oscuro o claro -->
+    <script>
+        const toggleBtn = document.getElementById('theme-toggle');
+        const currentTheme = localStorage.getItem('theme');
+        if (currentTheme === 'dark') {
+        document.body.classList.add('dark-mode');
+        toggleBtn.textContent = 'Tema Claro';
+        }
+        toggleBtn.addEventListener('click', () => {
+        document.body.classList.toggle('dark-mode');
+        let theme = document.body.classList.contains('dark-mode') ? 'dark' : 'light';
+        localStorage.setItem('theme', theme);
+        toggleBtn.textContent = theme === 'dark' ? 'Tema Claro' : 'Tema Oscuro';
+        });
+    </script>
 </body>
 </html>
