@@ -76,17 +76,17 @@ Para la organización y el desarrollo del proyecto, se ha optado por:
 
 ## Requerimientos del Cliente
 - **Logo**: Proporcionado por el cliente.
-- ![Imagen logo](img/logo2.png) 
+ ![Imagen logo](img/logo2.png) 
 - **Colores y tipografías**: Aprobados por el cliente tras una revisión inicial.
 
 
 
 ### Instalaciones
-1. **Visual Studio Code (VSC)**:
+- **Visual Studio Code (VSC)**:
    - Extensiones:
      - `Live Server`: Para visualizar cambios en tiempo real.
 
-2. **GitHub**:
+- **GitHub**:
    - Creación de Respoitorio 
      - `git init`: Inicializar repositorio.
      - `git add .`: Añadir cambios al área de preparación.
@@ -108,6 +108,9 @@ Para la organización y el desarrollo del proyecto, se ha optado por:
 
 ### Tipografías
 - Uso de fuentes que llamen la ateción por su claridad.
+
+### Uso de SASS
+- En el cmd accedemos hasta la carpeta del proyecto e intrducimos el siguiente comando: `sass scss/style.scss css/style.css --watch`, asi podremos crear el css a partir del scss.
 
 
 ## Conclusión
